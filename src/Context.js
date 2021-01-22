@@ -6,7 +6,7 @@ function ContextProvider({children}) {
     const [allPhotos, setAllPhotos] = useState([])
     const [cartItems, setCartItems] = useState([])
     
-    const url = "https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json"
+    const url = "https://raw.githubusercontent.com/OlliesWorld/unsplash_random_photos/master/unsplash_random.json"
     useEffect(() => {
         fetch(url)
             .then(res => res.json())

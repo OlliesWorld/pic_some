@@ -1,9 +1,9 @@
 :root {
     --black: #150605;
     --red: #EA453C;
-    --pink: #971203;
+    --pink: #5c0397;
     --light-blue: #EFFBFE;
-    --blue: #04def7;
+    --blue: #0459f7;
 }
 
 html, body {
@@ -16,11 +16,14 @@ main.photos {
     padding: 10px;
     display: grid;
     grid-gap: 2px;
-    grid-auto-rows: 100px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 115px;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
     grid-auto-flow: dense;
 }
-
+.title {
+    font-size: 1.5rem;
+    margin: 0 2rem;
+}
 main.cart-page {
     padding: 10px;
 }
@@ -31,16 +34,18 @@ main.cart-page {
 
 .cart-page .total-cost {
     text-align: right;
-    font-size: 1.3em;
+    font-size: 1.7em;
 }
 
 .cart-page div.order-button {
     display: flex;
     justify-content: center;
+    background: var(--red);
 }
 
 div.order-button > button {
     border-color: var(--black);
+    background: var(--red);
     cursor: pointer;
     padding: 15px;
     transition: all .2s ease-in-out;
@@ -92,6 +97,7 @@ img.image-grid {
 .ri-delete-bin-line, .ri-delete-bin-fill {
     font-size: 1.3em;
     cursor: pointer;
+    
 }
 
 .cart {
@@ -122,12 +128,14 @@ header {
     align-items: center;
     background-color: var(--pink);
     color: var(--light-blue);
-    padding: 0 10px;
+    padding: 0 5px;
     -webkit-box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
     -moz-box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
     box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
 }
-
+h2 {
+    margin: 0;
+}
 a {
     text-decoration: none;
 }
@@ -135,3 +143,7 @@ a {
 a:visited { color: var(--light-blue); }
 a:hover { color: var(--light-blue); }
 a:active { color: var(--light-blue); }
+
+.ri-fw {
+    margin-right: 2rem;
+}
